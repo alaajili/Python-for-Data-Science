@@ -19,5 +19,5 @@ if __name__ == "__main__":
             print(result)
         except ValueError:
             print('AssertionError: the arguments are bad')
-    except AssertionError and ValueError as e:
+    except AssertionError as e:
         print(e)
