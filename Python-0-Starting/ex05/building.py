@@ -1,7 +1,8 @@
 import sys
 
 
-def char_count(text) -> None:
+def char_count(text: str) -> None:
+    '''Takes in a string text, print infos about its charachters'''
 
     char_count = len(text)
     upper_count = sum(1 for char in text if char.isupper())
@@ -16,7 +17,6 @@ def char_count(text) -> None:
     print(f"{punctuation_count} punctuation marks")
     print(f"{space_count} spaces")
     print(f"{digit_count} digits")
-
 
 def main() -> None:
     assert len(sys.argv) <= 2, "Only one argument (text) is allowed."
