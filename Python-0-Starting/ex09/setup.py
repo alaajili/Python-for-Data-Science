@@ -2,6 +2,8 @@ from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+with open ("LICENSE", "r") as fh:
+    license = fh.read()
 
 setup(
     name="ft_package",
@@ -11,6 +13,7 @@ setup(
     description="A sample test package",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    license=license,
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
