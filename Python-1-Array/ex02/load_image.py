@@ -13,3 +13,6 @@ def ft_load(path: str) -> np.array:
         print("File not found. Please provide a valid file path.")
     except Exception as e:
         print(f"An error occurred: {e}. Please check the file and try again.")
+
+arr = ft_load("../landscape.jpg")
+print(arr)
