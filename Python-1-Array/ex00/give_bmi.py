@@ -44,4 +44,3 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     
     above_limit = bmi_arr > limit
     return above_limit.tolist()
-    
