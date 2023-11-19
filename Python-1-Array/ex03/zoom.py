@@ -9,7 +9,7 @@ def zoom():
         path = "../animal.jpeg"
         img = ft_load(path)
         print(np.array(img))
-        zoomed_img = img.crop((100, 100, 500, 500))
+        zoomed_img = img.crop((300, 300, 700, 700))
         print("New shape after slicing:", zoomed_img.size)
         print(np.array(zoomed_img))
 
