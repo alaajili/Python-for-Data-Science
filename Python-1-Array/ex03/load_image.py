@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+import cv2
 
 
 def ft_load(path: str):
@@ -10,7 +11,7 @@ def ft_load(path: str):
     - path (str): The file path to the image.
 
     Returns:
-    - img represantation
+    - np.array: NumPy array representing the image.
     """
     try:
         with Image.open(path) as img:
